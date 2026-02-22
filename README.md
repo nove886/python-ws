@@ -1,7 +1,7 @@
 <div align="center">
 
 # Python-ws
-基于python serverless实现的vless+trojan+shadowsocks三协议,轻量，无内核。
+基于python serverless实现的vless+trojan+shadowsocks三协议，轻量，无内核。
 
 ---
 
@@ -10,7 +10,7 @@ Telegram交流反馈群组：https://t.me/eooceu
 </div>
 
 
-* 用于python环境的玩具和容器，基于python aiohttp库，vless+trojan+shadowsocks三协议，集成哪吒探针服务(v0或v1)，可自行添加环境变量
+* 用于python环境的玩具和容器，vless+trojan+shadowsocks三协议，集成哪吒探针服务(v0或v1)，可自行添加环境变量开启
 
 * PaaS 平台设置的环境变量
   | 变量名        | 是否必须 | 默认值 | 备注 |
@@ -24,6 +24,7 @@ Telegram交流反馈群组：https://t.me/eooceu
   | DOMAIN       | 是 |        | 项目分配的域名或已反代的域名，不包括https://前缀  |
   | SUB_PATH     | 否 |  sub   | 订阅路径   |
   | AUTO_ACCESS  | 否 |  false | 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量 |
+  | DEBUG        | 否 |  false | 调试模式，默认关闭，true开启                   |
 
 * 域名/${SUB_APTH}查看节点信息，非标端口，域名:端口/${SUB_APTH}  SUB_APTH为自行设置的订阅token，未设置默认为sub
 
